@@ -20,7 +20,7 @@ void Read_Data(recordtype list[], int *n){
     if (f!=NULL){
         int i = 0;
         while (!feof(f)){
-            fscanf(f, "%d%d%[^\n]", &list[i].recordfield, &list[i].otherfield);
+            fscanf(f, "%d[^\n]", &list[i].recordfield);
             i++;
         }
         *n = i;
