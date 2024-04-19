@@ -99,9 +99,9 @@ int main(){
 	scanf("%d", &start);
 	Nhanh_Can(a, n, i, start, &TGT, &CD, &GiaNNTT, x, PA);
 	for (int j=0;j<n-2;j++){
-		printf("%d,%d ->  ", PA[j].start, PA[j].end);
+		printf("%c ->  ", PA[j].start + 97);
 	}
-	printf("%d,%d", PA[n-2].start, PA[n-2].end);
+	printf("%c", PA[n-2].start + 97);
 	printf("\n%.3f", GiaNNTT);
 	return 0;
 }
