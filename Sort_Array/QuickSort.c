@@ -53,7 +53,7 @@ int main()
     printf("Input Array: ");
     Print_List(list, n);
     QuickSort(list, 0, n-1);
-    printf("Input array after use selection sort: ");
+    printf("Quick sort : ");
     Print_List(list, n);
     return 0;
 }

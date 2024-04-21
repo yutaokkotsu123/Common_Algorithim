@@ -57,6 +57,7 @@ void Tao_Bang(Do_Vat ds_vat[], int n, int W, bang F, bang X){
 	
 	for (k=1;k<n;k++){
 		for (V=0;V<=W;V++){
+			Xmax = 0;
 			Fmax = 0;
 			yk = V/ds_vat[k].TL;
 			for (xk=0;xk<=yk;xk++){
